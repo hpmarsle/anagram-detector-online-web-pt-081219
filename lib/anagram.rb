@@ -9,7 +9,7 @@ class Anagram
   
   def match(array)
     
-    array.find_all{|word|word==@word}
+    array.find_all{|word|word.join.sort==@word.join.sort}
     #return all matches in array or an empty array if no matches
   end 
   
