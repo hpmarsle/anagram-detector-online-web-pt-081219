@@ -10,8 +10,8 @@ class Anagram
   def match(array)
     
     letters_in_word = array.collect{|word|word.split("")}
-    letters_in_word.find_all{|letters|letters.sort == @word.split("").sort}
-    # .join("").split
+    matches = letters_in_word.find_all{|letters|letters.sort == @word.split("").sort}
+    matches.join("").split
     
     #return all matches in array or an empty array if no matches
   end 
