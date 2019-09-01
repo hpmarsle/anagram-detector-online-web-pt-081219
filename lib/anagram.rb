@@ -12,7 +12,6 @@ class Anagram
     letters_in_word = array.collect{|word|word.split("")}
     matches = letters_in_word.find_all{|letters|letters.sort == @word.split("").sort}
     matches.collect{|letters|letters.join("")}
-    binding.pry
     #return all matches in array or an empty array if no matches
   end 
   
